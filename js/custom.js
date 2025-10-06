@@ -598,6 +598,25 @@ var owlSingleSlider = function () {
 
 })
 
+// Blog post embed toggle functionality
+function toggleEmbedView(embedId) {
+	var embedElement = document.getElementById(embedId);
+	var isVisible = embedElement.style.display !== 'none';
+	
+	if (isVisible) {
+		embedElement.style.display = 'none';
+	} else {
+		embedElement.style.display = 'block';
+		// Scroll to the embedded content smoothly
+		setTimeout(function() {
+			embedElement.scrollIntoView({ 
+				behavior: 'smooth', 
+				block: 'start' 
+			});
+		}, 100);
+	}
+}
+
 
 
 
