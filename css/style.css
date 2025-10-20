@@ -1,3 +1,9 @@
+/* Make Read on Medium buttons static in height */
+.read-medium-btn-static {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+}
 /*
 * Template Name: Space
 * Template Author: Untree.co

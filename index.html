@@ -347,147 +347,82 @@
           </div>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <!-- Blog Post (New) -->
-            <div class="blog-post-item mb-5 gsap-reveal-hero">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                  <div class="blog-post-image">
-                    <img src="images/cookiecutter_blog.png"
-                         alt="Stop Naming Files ‘final_final.ipynb’ - Medium Article"
-                         class="img-fluid rounded"
-                         style="width: 100%; height: 250px; object-fit: cover;">
-                  </div>
+        <!-- Layout A: Compact Card Grid -->
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="card blog-card w-100 h-100 d-flex flex-column gsap-reveal-hero">
+              <img class="card-img-top" src="images/cookiecutter_blog.png" alt="Stop Naming Files final_final.ipynb" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column flex-grow-1">
+                <h5 class="card-title mb-2">Stop Naming Files ‘final_final.ipynb’</h5>
+                <p class="card-text text-muted mb-3">Keep data science projects clean with Cookiecutter structure and simple workflow habits.</p>
+                <div class="mb-3">
+                  <span class="badge badge-light mr-1 mb-1">Data Science</span>
+                  <span class="badge badge-light mr-1 mb-1">Cookiecutter</span>
+                  <span class="badge badge-light mr-1 mb-1">Reproducibility</span>
                 </div>
-                <div class="col-lg-7 col-md-6">
-                  <div class="blog-post-content">
-                    <h3 class="mb-3">
-                      <a href="https://medium.com/@chamochiran05/stop-naming-files-final-final-ipynb-14350c1fb982" target="_blank" class="text-black text-decoration-none">
-                        Stop Naming Files ‘final_final.ipynb’
-                      </a>
-                    </h3>
-                    <p class="mb-3">
-                      A practical guide to keeping data science projects clean and reproducible using the Cookiecutter Data Science template. Ditch chaotic notebooks and scattered files with a clear folder structure, version control habits, and simple best practices that scale.
-                    </p>
-                    <div class="blog-meta mb-3">
-                      <span class="badge badge-light mr-2 mb-1">Data Science</span>
-                      <span class="badge badge-light mr-2 mb-1">Cookiecutter</span>
-                      <span class="badge badge-light mr-2 mb-1">Project Structure</span>
-                      <span class="badge badge-light mr-2 mb-1">Reproducibility</span>
-                    </div>
-                    <div class="blog-actions">
-                      <a href="https://medium.com/@chamochiran05/stop-naming-files-final-final-ipynb-14350c1fb982" target="_blank" class="btn btn-outline-black btn-sm mr-2 mb-2" aria-label="Read ‘Stop Naming Files final_final.ipynb’ on Medium">
-                        Read on Medium
-                      </a>
-                    </div>
-                  </div>
+                <div class="mt-auto">
+                  <a href="https://medium.com/@chamochiran05/stop-naming-files-final-final-ipynb-14350c1fb982" target="_blank" rel="noopener noreferrer" class="btn btn-outline-black btn-sm read-medium-btn-static" aria-label="Read 'Stop Naming Files final_final.ipynb' on Medium">Read on Medium</a>
                 </div>
               </div>
             </div>
-            
-            <!-- Blog Post 1 -->
-            <div class="blog-post-item mb-5 gsap-reveal-hero">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                  <div class="blog-post-image">
-                    <img src="images/medium_employee_churn.png" 
-                         alt="Employee Churn Prediction - Medium Article" 
-                         class="img-fluid rounded" 
-                         style="width: 100%; height: 250px; object-fit: cover;">
-                  </div>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <div class="blog-post-content">
-                    <h3 class="mb-3">
-                      <a href="https://medium.com/@chamochiran05/predicting-employee-churn-with-machine-learning-54a32f1c2ebd" target="_blank" class="text-black text-decoration-none">
-                        Predicting Employee Churn with Machine Learning
-                      </a>
-                    </h3>
-                    <p class="mb-3">
-                      A comprehensive analysis of employee churn prediction using machine learning techniques. This article explores feature engineering, model selection, and evaluation metrics to build a robust predictive model for HR analytics.
-                    </p>
-                    <div class="blog-meta mb-3">
-                      <span class="badge badge-light mr-2 mb-1">Machine Learning</span>
-                      <span class="badge badge-light mr-2 mb-1">HR Analytics</span>
-                      <span class="badge badge-light mr-2 mb-1">Python</span>
-                    </div>
-                    <div class="blog-actions">
-                      <a href="https://medium.com/@chamochiran05/predicting-employee-churn-with-machine-learning-54a32f1c2ebd" target="_blank" class="btn btn-outline-black btn-sm mr-2 mb-2">
-                        Read on Medium
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Blog Post 2 -->
-            <div class="blog-post-item mb-5 gsap-reveal-hero">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                  <div class="blog-post-image">
-                    <img src="images/neural_networks_blog.png" 
-                         alt="Neurons are just fancy Yes/No buttons - Medium Article" 
-                         class="img-fluid rounded" 
-                         style="width: 100%; height: 250px; object-fit: cover;">
-                  </div>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <div class="blog-post-content">
-                    <h3 class="mb-3">
-                      <a href="https://medium.com/@chamochiran05/a70d632ab790" target="_blank" class="text-black text-decoration-none">
-                        Neurons are just fancy Yes/No buttons
-                      </a>
-                    </h3>
-                    <p class="mb-3">
-                      A simple yet insightful explanation of how neural networks really work. Demystifying the complex world of deep learning by breaking down neurons into their fundamental decision-making components and exploring how organized stupidity creates intelligence.
-                    </p>
-                    <div class="blog-meta mb-3">
-                      <span class="badge badge-light mr-2 mb-1">Deep Learning</span>
-                      <span class="badge badge-light mr-2 mb-1">Neural Networks</span>
-                      <span class="badge badge-light mr-2 mb-1">For Beginners</span>
-                    </div>
-                    <div class="blog-actions">
-                      <a href="https://medium.com/@chamochiran05/a70d632ab790" target="_blank" class="btn btn-outline-black btn-sm mr-2 mb-2">
-                        Read on Medium
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Placeholder for future blog posts -->
-            <div class="future-posts-placeholder text-center gsap-reveal-hero">
-              <div class="placeholder-content p-5" style="border: 2px dashed #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
-                <h4 class="mb-3 text-muted">More Articles Coming Soon</h4>
-                <p class="text-muted mb-4">
-                  I'm continuously working on new data science projects and sharing insights. 
-                  Stay tuned for more in-depth articles covering machine learning, data analysis, and real-world applications.
-                </p>
-                <div class="upcoming-topics">
-                  <h5 class="mb-3">Upcoming Topics:</h5>
-                  <div class="row">
-                    <div class="col-md-4 mb-2">
-                      <span class="badge badge-light p-2">Deep Learning</span>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                      <span class="badge badge-light p-2">Time Series Analysis</span>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                      <span class="badge badge-light p-2">Foundational and Conceptual</span>
-                    </div>
-                  </div>
-                </div>
-                <a href="https://medium.com/@chamochiran05" target="_blank" class="btn btn-outline-primary mt-3">
-                  Follow on Medium
-                </a>
-              </div>
-            </div>
-
           </div>
-        </div>
+            <!-- Card 4: New Blog Post -->
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4 d-flex">
+              <div class="card blog-card w-100 h-100 d-flex flex-column gsap-reveal-hero">
+                <img class="card-img-top" src="images/Lightsaber Duel in Digital Realm.png" alt="Finding The Balance" style="height: 160px; object-fit: cover;">
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <h5 class="card-title mb-2">Finding The Balance: The Jedi Way of Machine Learning</h5>
+                  <p class="card-text text-muted mb-3">Balance bias and variance in machine learning, Jedi style.</p>
+                  <div class="mb-3">
+                    <span class="badge badge-light mr-1 mb-1">Machine Learning</span>
+                    <span class="badge badge-light mr-1 mb-1">Bias-Variance</span>
+                    <span class="badge badge-light mr-1 mb-1">Overfitting</span>
+                    <span class="badge badge-light mr-1 mb-1">Underfitting</span>
+                    <span class="badge badge-light mr-1 mb-1">Generalization</span>
+                  </div>
+                  <div class="mt-auto">
+                    <a href="https://medium.com/@chamochiran05/finding-the-balance-4d16dd90ee78" target="_blank" rel="noopener noreferrer" class="btn btn-outline-black btn-sm read-medium-btn-static" aria-label="Read 'Finding The Balance' on Medium">Read on Medium</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- Card 2 -->
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="card blog-card w-100 h-100 d-flex flex-column gsap-reveal-hero">
+              <img class="card-img-top" src="images/medium_employee_churn.png" alt="Predicting Employee Churn" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column flex-grow-1">
+                <h5 class="card-title mb-2">Predicting Employee Churn</h5>
+                <p class="card-text text-muted mb-3">Feature engineering + model selection for reliable HR churn prediction.</p>
+                <div class="mb-3">
+                  <span class="badge badge-light mr-1 mb-1">Machine Learning</span>
+                  <span class="badge badge-light mr-1 mb-1">HR Analytics</span>
+                  <span class="badge badge-light mr-1 mb-1">Python</span>
+                </div>
+                <div class="mt-auto">
+                  <a href="https://medium.com/@chamochiran05/predicting-employee-churn-with-machine-learning-54a32f1c2ebd" target="_blank" rel="noopener noreferrer" class="btn btn-outline-black btn-sm read-medium-btn-static" aria-label="Read 'Predicting Employee Churn' on Medium">Read on Medium</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="card blog-card w-100 h-100 d-flex flex-column gsap-reveal-hero">
+              <img class="card-img-top" src="images/neural_networks_blog.png" alt="Neurons are Yes/No buttons" style="height: 160px; object-fit: cover;">
+              <div class="card-body d-flex flex-column flex-grow-1">
+                <h5 class="card-title mb-2">Neurons are just fancy Yes/No buttons</h5>
+                <p class="card-text text-muted mb-3">An intuitive take on how deep nets build up intelligence from simple decisions.</p>
+                <div class="mb-3">
+                  <span class="badge badge-light mr-1 mb-1">Deep Learning</span>
+                  <span class="badge badge-light mr-1 mb-1">Neural Nets</span>
+                  <span class="badge badge-light mr-1 mb-1">Explain</span>
+                </div>
+                <div class="mt-auto">
+                  <a href="https://medium.com/@chamochiran05/a70d632ab790" target="_blank" rel="noopener noreferrer" class="btn btn-outline-black btn-sm read-medium-btn-static" aria-label="Read 'Neurons are just fancy Yes/No buttons' on Medium">Read on Medium</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 
