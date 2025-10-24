@@ -1,0 +1,98 @@
+<!-- Portfolio detail for CBSL Rice Price Collector -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CBSL Rice Price Collector</title>
+</head>
+
+<body>
+  <nav class="site-nav dark mb-5 site-navbar-target">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">Hi<span class="text-primary">.</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+    <div class="container">
+      <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
+
+        <div class="portfolio-single-inner">
+          <h2 class="heading-portfolio-single-h2 text-black">CBSL Rice Price Collector</h2>
+
+          <div class="row justify-content-between mb-5">
+            <div class="col-12 mb-4">
+              <figure class="mb-4">
+                <img src="images/img_7.png" alt="Rice Price Collector" class="img-fluid">
+              </figure>
+            </div>
+
+            <div class="col-12 my-5">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="detail-v1">
+                    <span class="detail-label">Project</span>
+                    <span class="detail-val">Open Source</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="detail-v1">
+                    <span class="detail-label">Role</span>
+                    <span class="detail-val">Scraper, Parser, Tooling</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="detail-v1">
+                    <span class="detail-label">Tools</span>
+                    <span class="detail-val">Python, Requests, BeautifulSoup, PDF parsing</span>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="detail-v1">
+                    <span class="detail-label">Links</span>
+                    <span class="detail-val"><a href="https://github.com/ChamoChiran/rice_price_collector" target="_blank">GitHub</a> · <a href="https://pypi.org/project/rice-price-collector/" target="_blank">PyPI</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <h4 style="color: #000000 !important; font-weight: 900 !important; font-size: 20px !important;">Overview</h4>
+              <p>rice_price_collector collects rice prices from the CBSL website and provides tools for downloading, parsing, and processing rice price data.</p>
+
+              <h4 style="color: #000000 !important; font-weight: 900 !important; font-size: 20px !important;">Installation</h4>
+              <pre><code>pip install cbsl_rice_price_collector</code></pre>
+
+              <h4 style="color: #000000 !important; font-weight: 900 !important; font-size: 20px !important;">Usage</h4>
+              <pre><code>from rice_price_collector.downloader import pdf_downloader
+from rice_price_collector.parser import parser
+
+# Download PDFs
+pdf_downloader.download_pdfs("./data/raw/2024")
+
+# Parse PDFs
+parsed_data = parser.parse_pdfs("./data/raw/2024")
+</code></pre>
+
+              <h4 style="color: #000000 !important; font-weight: 900 !important; font-size: 20px !important;">Repository</h4>
+              <p>See the <a href="https://github.com/ChamoChiran/rice_price_collector" target="_blank">GitHub repository</a> for full docs, tests, and source code. The project is MIT licensed and contributions are welcome.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
