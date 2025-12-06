@@ -3,6 +3,7 @@ import empChurnConfMatrix from '../assets/images/emp_pred/conf_matrix.png';
 import mentalHealthImg from '../assets/images/mental-health-clf/mental-health-classification.png';
 import housePricePred from '../assets/images/house-price-pred/house-price-pred.png';
 import ricePriceCollectorImg from '../assets/images/rice-price-collector/rice-price-collector.png';
+import historyAgentImg from '../assets/images/history-book/history_agent_ss.png';
 
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/chamochiran/",
@@ -135,6 +136,7 @@ export const PROJECTS = [
     title: "World History Search Pipeline",
     subtitle: "Semantic Search & RAG System",
     desc: "A semantic search system for world history textbooks, transforming raw educational content into a queryable vector database.",
+    image: historyAgentImg,
     tags: ["RAG", "Vector DB", "Python", "NLP"],
     theme: "yellow",
     details: {
