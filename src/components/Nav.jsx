@@ -11,7 +11,7 @@ const Nav = ({ isProjectView }) => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 border-b border-gray-800 backdrop-blur-sm h-16 flex items-center">
         <div className="max-w-7xl mx-auto px-4 w-full">
            <Link 
-             to="/#projects"
+             to="/?section=projects"
              className="flex items-center gap-2 text-[#4ade80] hover:text-white font-bold font-mono uppercase tracking-wider transition-colors"
            >
              <ArrowLeft className="w-5 h-5" /> Back to Projects
@@ -22,10 +22,10 @@ const Nav = ({ isProjectView }) => {
   }
 
   const links = [
-    { name: 'Home', href: '/#hero' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'About', href: '/#about' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Home', to: '/?section=hero' },
+    { name: 'Projects', to: '/?section=projects' },
+    { name: 'About', to: '/?section=about' },
+    { name: 'Contact', to: '/?section=contact' },
   ];
 
   return (
@@ -38,9 +38,9 @@ const Nav = ({ isProjectView }) => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {links.map(link => (
-                <a key={link.name} href={link.href} className="text-gray-300 hover:text-[#4ade80] px-3 py-2 text-sm font-bold uppercase tracking-wider transition-colors">
+                <Link key={link.name} to={link.to} className="text-gray-300 hover:text-[#4ade80] px-3 py-2 text-sm font-bold uppercase tracking-wider transition-colors">
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -56,9 +56,9 @@ const Nav = ({ isProjectView }) => {
         <div className="md:hidden bg-black border-b border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {links.map(link => (
-              <a key={link.name} href={link.href} className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold uppercase" onClick={() => setIsOpen(false)}>
+              <Link key={link.name} to={link.to} className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-bold uppercase" onClick={() => setIsOpen(false)}>
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

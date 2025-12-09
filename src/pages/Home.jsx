@@ -10,8 +10,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-
-import cvPdf from '../assets/docs/CV_ats_v0.1.2_DataScience.pdf';
+import cvPdf from '../assets/docs/CV_ats_v0_1_2___AI_Engineering.pdf';
 import profilePic from '../assets/images/profile_pic.png';
 import profilePic2 from '../assets/images/profile_pic_2.png';
 import { PROJECTS, SKILLS, CERTS, ARTICLES, ABOUT_ME, JOURNEY, TECH_STACK } from '../data';
@@ -24,10 +23,13 @@ import Footer from '../components/Footer';
 const Home = () => {
   const location = useLocation();
 
-  // Handle initial hash scrolling
+  // Handle initial scrolling based on query param
   useEffect(() => {
-    if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
+    const params = new URLSearchParams(location.search);
+    const section = params.get('section');
+    
+    if (section) {
+      const element = document.getElementById(section);
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth' });
@@ -36,7 +38,8 @@ const Home = () => {
     }
   }, [location]);
 
-  // Update hash on scroll
+  // Update hash on scroll - Disabled for HashRouter compatibility
+  /*
   useEffect(() => {
     const sections = ['hero', 'projects', 'about', 'skills', 'articles', 'contact'];
     
@@ -60,6 +63,7 @@ const Home = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  */
 
   return (
     <>

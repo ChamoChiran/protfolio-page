@@ -30,7 +30,7 @@ const ProjectPage = () => {
   return (
     <ProjectDetail 
       project={project} 
-      onBack={() => navigate('/#projects')} 
+      onBack={() => navigate('/?section=projects')} 
     />
   );
 };
