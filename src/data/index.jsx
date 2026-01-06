@@ -4,6 +4,7 @@ import mentalHealthImg from '../assets/images/mental-health-clf/mental-health-cl
 import housePricePred from '../assets/images/house-price-pred/house-price-pred.png';
 import ricePriceCollectorImg from '../assets/images/rice-price-collector/rice-price-collector.png';
 import historyAgentImg from '../assets/images/history-book/history_agent_ss.png';
+import roleBasedRagImg from '../assets/images/role-based-rag/ss1.png';
 
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/chamochiran/",
@@ -111,7 +112,7 @@ export const PROJECTS = [
     theme: "cyan",
     image: ricePriceCollectorImg,
     details: {
-      date: "2024",
+      date: "2025",
       role: "Python Developer",
       tools: "Python, PyPI, pdfplumber",
       repo: "https://github.com/ChamoChiran/rice_price_collector",
@@ -140,7 +141,7 @@ export const PROJECTS = [
     tags: ["RAG", "Vector DB", "Python", "NLP"],
     theme: "yellow",
     details: {
-      date: "2024",
+      date: "2025",
       role: "AI Engineer",
       tools: "Python, ChromaDB, LangChain, Gemini API",
       repo: "https://github.com/ChamoChiran/world-history-search-pipeline",
@@ -159,6 +160,38 @@ export const PROJECTS = [
         { name: "Gemini API", desc: "LLM integration" }
       ],
       results: "Successfully built a pipeline that converts textbooks into a queryable vector database, enabling context-aware semantic search for historical queries."
+    }
+  },
+  {
+    id: 6,
+    title: "Role-Based RAG Assistant",
+    subtitle: "Secure Retrieval-Augmented Generation System",
+    desc: "A role-aware RAG system that enforces access control during semantic retrieval, ensuring users only receive AI-generated answers from documents they are authorized to view.",
+    image: roleBasedRagImg,
+    tags: ["RAG", "RBAC", "ChromaDB", "FastAPI", "LLM"],
+    theme: "cyan",
+    details: {
+      date: "2025",
+      role: "AI Engineer",
+      tools: "Python, FastAPI, ChromaDB, Sentence Transformers, Gemini API, React",
+      repo: "https://github.com/ChamoChiran/role-based-rag-system",
+      objective: "Design and implement a secure, role-based Retrieval-Augmented Generation system that prevents unauthorized data access while providing accurate, context-aware AI responses.",
+      steps: [
+        "Document ingestion with role-based metadata tagging",
+        "Semantic chunking and embedding using sentence-transformers",
+        "Vector database construction with ChromaDB and metadata filtering",
+        "Role-aware semantic retrieval and context assembly",
+        "Prompt engineering and response generation using Gemini LLM"
+      ],
+      techStack: [
+        { name: "Python", desc: "Core backend programming language" },
+        { name: "FastAPI", desc: "High-performance API framework" },
+        { name: "ChromaDB", desc: "Vector database with metadata-based filtering" },
+        { name: "Sentence-Transformers", desc: "Embedding generation for semantic search" },
+        { name: "Gemini API", desc: "LLM for grounded response generation" },
+        { name: "React", desc: "Frontend chat interface with role selection" }
+      ],
+      results: "Successfully implemented a secure RAG system that combines semantic search with role-based access control, preventing information leakage while delivering accurate, auditable AI-generated responses."
     }
   }
 ];
